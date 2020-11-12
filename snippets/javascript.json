@@ -1,0 +1,161 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+
+  "React class component": {
+    "prefix": "C",
+    "description": "React old-style class component",
+    "body": [
+      "import React from 'react'",
+      "",
+      "class ${1:name} extends React.Component {",
+      "  constructor(props) {",
+      "    super(props)",
+      "    this.state = {}",
+      "    // this.method = this.method.bind(this) // bind \"this\"",
+      "  }",
+      "  componentWillMount() {}",
+      "  componentDidMount() {}",
+      "  componentWillReceiveProps(nextProps) {}",
+      "  shouldComponentUpdate(nextProps, nextState) {}",
+      "  componentWillUpdate(nextProps, nextState) {}",
+      "  componentDidUpdate(prevProps, prevState) {}",
+      "  componentWillUnmount() {}",
+      "  componentDidCatch(error, errorInfo) {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div></div>$0",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "$1.propTypes = {}",
+      "$1.defaultProps = {}",
+      "",
+      "export default $1",
+    ]
+  },
+
+  "React functional component": {
+    "prefix": "S",
+    "description": "React function component",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:name} = ({ }) => {",
+      "  return (",
+      "    <div></div>$0",
+      "  )",
+      "}",
+      "",
+      "export default $1",
+    ]
+  },
+
+  "React class component (typescript)": {
+    "prefix": "X",
+    "description": "React class component (typesecript)",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface $1Props {",
+      "  foo:  string,",
+      "  bar?: number[]",
+      "}",
+      "",
+      "interface $1State {",
+      "}",
+      "",
+      "class $1 extends React.Component<$1Props, $1State> {",
+      "  constructor(props: $1Props) {",
+      "    super(props)",
+      "    this.state = {}",
+      "    // this.method = this.method.bind(this) // bind 'this'",
+      "  }",
+      "  componentWillMount() {}",
+      "  componentDidMount() {}",
+      "  componentWillReceiveProps(nextProps) {}",
+      "  shouldComponentUpdate(nextProps, nextState) {}",
+      "  componentWillUpdate(nextProps, nextState) {}",
+      "  componentDidUpdate(prevProps, prevState) {}",
+      "  componentWillUnmount() {}",
+      "  componentDidCatch(error, errorInfo) {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div></div>$0",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default $1      ",
+    ]
+  },
+
+  "React functional component (typescript)": {
+    "prefix": "A",
+    "description": "React functional component (typescript)",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface $1Props {",
+      "  foo:  string,",
+      "  bar?: number[]",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = ({ foo, bar }) => {",
+      "  return (",
+      "    <div></div>$0",
+      "  )",
+      "}",
+      "",
+      "export default $1",
+    ]
+  },
+
+  "React useState declaration": {
+    "prefix": "Z",
+    "description": "React useState declaration",
+    "body": [
+      "const [$1, set_$1] = useState($0)"
+    ]
+  },
+
+  "Debugger": {
+    "prefix": "D",
+    "description": "Debugger statement",
+    "body": [
+      "debugger$0"
+    ]
+  },
+
+  "Arrow function": {
+    "prefix": "h",
+    "description": "Arrow function",
+    "body": [
+      "(${1:d}) => {$0}"
+    ]
+  },
+
+  "Jasmine test": {
+    "prefix": "it",
+    "description": "Jasmine test",
+    "body": [
+      "it('Should ${1:have a description}', function () {",
+      "  $0",
+      "});"
+    ]
+  }
+
+}

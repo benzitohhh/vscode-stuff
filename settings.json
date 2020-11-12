@@ -1,0 +1,26 @@
+{
+    "editor.detectIndentation": false,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "favorites.ownExplorer": true,
+    "workbench.sideBar.location": "left",
+    "files.associations": {
+      ".env*": "properties"
+    },
+    "window.zoomLevel": 0,
+
+    // Hide the minimap (tiny code overview on right)
+    "editor.minimap.enabled": false,
+
+    // Hide the activity bar (left sidebar)
+    "workbench.activityBar.visible": false,
+
+    // Hide breadcrumbs (near each tab)
+    "breadcrumbs.enabled": false,
+
+    // Import js: single quotes, and .js extension (i.e. from './bla/Bla.js')
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.importModuleSpecifierEnding": "js",
+    "javascript.preferences.importModuleSpecifierEnding": "js",
+  }
