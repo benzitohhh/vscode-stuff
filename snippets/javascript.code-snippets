@@ -13,6 +13,7 @@
 	// 	"description": "Log output to console"
 
   "React class component": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "C",
     "description": "React old-style class component",
     "body": [
@@ -48,6 +49,7 @@
   },
 
   "React functional component": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "S",
     "description": "React function component",
     "body": [
@@ -64,6 +66,7 @@
   },
 
   "React class component (typescript)": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "X",
     "description": "React class component (typesecript)",
     "body": [
@@ -104,6 +107,7 @@
   },
 
   "React functional component (typescript)": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "A",
     "description": "React functional component (typescript)",
     "body": [
@@ -125,6 +129,7 @@
   },
 
   "React useState declaration": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "Z",
     "description": "React useState declaration",
     "body": [
@@ -133,6 +138,7 @@
   },
 
   "Debugger": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "D",
     "description": "Debugger statement",
     "body": [
@@ -140,15 +146,38 @@
     ]
   },
 
+  "Function": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "f",
+    "description": "Function",
+    "body": [
+      "function ${1:name}(${2:}) {",
+      "  $0",
+      "}"
+    ]
+  },
+
   "Arrow function": {
-    "prefix": "h",
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "g",
     "description": "Arrow function",
     "body": [
       "(${1:d}) => {$0}"
     ]
   },
 
+  "const": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "c",
+    "description": "const",
+    "body": [
+      "const "
+    ]
+  },
+
+
   "Jasmine test": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "it",
     "description": "Jasmine test",
     "body": [

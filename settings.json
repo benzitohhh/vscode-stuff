@@ -2,7 +2,7 @@
     // General
     "editor.minimap.enabled": false, // hide minimap (bird's-eye views on right)
     "workbench.activityBar.visible": false, // hide the activity bar (left sidebar)
-    "breadcrumbs.enabled": false, // hide breadcrumbs (near each tab)
+    "breadcrumbs.enabled": true, // breadcrumbs (near each tab - shows heirarchy in files, var/functions etc)
     "editor.detectIndentation": false,
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
@@ -31,5 +31,7 @@
     "go.gopath": "/Users/benimmanuel/go/",
     "go.goroot": "/usr/local/go",
     "go.docsTool": "gogetdoc",
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "editor.renderWhitespace": "none",
+    "diffEditor.renderSideBySide": false
   }
