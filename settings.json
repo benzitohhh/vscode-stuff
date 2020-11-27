@@ -33,5 +33,10 @@
     "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
     "editor.renderWhitespace": "none",
-    "diffEditor.renderSideBySide": false
+    "diffEditor.renderSideBySide": false,
+
+    // Python
+    "python.pythonPath": "/Users/benimmanuel/miniconda3/bin/python",
+    "terminal.integrated.inheritEnv": false
+
   }
