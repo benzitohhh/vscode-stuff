@@ -5,14 +5,14 @@
 
 `settings.json` is the global settings file for VSCode.
 
-On OSX, it lives somewhere like `~/Library/Application Support/Code/User/settings.json`
+On OSX, it lives somewhere like `~/Library/Application\ Support/Code/User/settings.json`
 
 
 ## Snippets
 
 The `snippets` folder can contain snippets for various lanaguages.
 
-On OSX, it lives somewhere like `~/Library/Application Support/Code/User/snippets`
+On OSX, it lives somewhere like `~/Library/Application\ Support/Code/User/snippets`
 
 
 ## Cheatsheat
