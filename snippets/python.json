@@ -17,7 +17,7 @@
     "prefix": "c",
     "body": [
       "# %%",
-      "$2"
+      "$1"
     ],
     "description": "creates an interactive cell (jupyter)"
   },
@@ -28,7 +28,22 @@
       "# %%",
       "%reload_ext autoreload",
       "%autoreload 2",
-      "$2"
+      "$1"
+    ],
+    "description": "adds an interactive cell that emsures external code files are reloaded on each change"
+  },
+ 
+  "Plot timeseries linechart": {
+    "prefix": "l",
+    "body": [
+      "# %%",
+      "import matplotlib.pyplot as plt",
+      "%matplotlib inline",
+      "import seaborn as sns",
+      "xs = range(4)",
+      "ys = [123, 210, 240, 258]",
+      "sns.lineplot(x=xs, y=ys)",
+      "$1"
     ],
     "description": "adds an interactive cell that emsures external code files are reloaded on each change"
   },
