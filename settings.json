@@ -38,5 +38,5 @@
 
     // Python
     "python.defaultInterpreterPath": "/Users/benimmanuel/miniconda3/bin/python",
-    //"python.pythonPath": "/Users/benimmanuel/miniconda3/bin/python"
+    "python.pythonPath": "/Users/benimmanuel/miniconda3/bin/python",
   }
