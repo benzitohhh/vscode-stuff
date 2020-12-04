@@ -12,6 +12,9 @@
       ".env*": "properties"
     },
     "window.zoomLevel": 0,
+    "editor.renderWhitespace": "none",
+    "diffEditor.renderSideBySide": true,
+    "terminal.integrated.inheritEnv": false,
 
     // Javascript: single quotes, and .js extension (i.e. from './bla/Bla.js')
     "typescript.preferences.quoteStyle": "single",
@@ -32,11 +35,8 @@
     "go.goroot": "/usr/local/go",
     "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
-    "editor.renderWhitespace": "none",
-    "diffEditor.renderSideBySide": false,
 
     // Python
-    "python.pythonPath": "/Users/benimmanuel/miniconda3/bin/python",
-    "terminal.integrated.inheritEnv": false
-
+    "python.defaultInterpreterPath": "/Users/benimmanuel/miniconda3/bin/python",
+    //"python.pythonPath": "/Users/benimmanuel/miniconda3/bin/python"
   }
