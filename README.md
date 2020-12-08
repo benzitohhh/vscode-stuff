@@ -15,6 +15,16 @@ The `snippets` folder can contain snippets for various lanaguages.
 On OSX, it lives somewhere like `~/Library/Application\ Support/Code/User/snippets`
 
 
+## Useful extensions:
+
+* ESLint
+* Python
+* Jupyter
+* Docker
+* Awesome Emacs
+* Better Align
+
+
 ## Cheatsheat
 
 These are some keyboard shortcuts I find helpful (OSX):
