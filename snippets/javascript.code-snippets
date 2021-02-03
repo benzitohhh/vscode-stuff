@@ -130,12 +130,36 @@
 
   "React useState declaration": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "Z",
+    "prefix": "z",
     "description": "React useState declaration",
     "body": [
       "const [$1, set_$1] = useState($0)"
     ]
   },
+
+  "React useReducer declaration": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "r",
+    "description": "React useState declaration",
+    "body": [
+      "  const INITIAL_STATE = {}",
+      "  const ACTION_A = 'ACTION_A'",
+      "  ",
+      "  function reducer(state, action) {",
+      "    switch (action.type) {",
+      "      case ACTION_A:",
+      "        return { /* do stuff */ }",
+      "      default:",
+      "        throw new Error('action not found')",
+      "    }",
+      "  }",
+      "  ",
+      "  const [state, dispatch] = useReducer(reducer, INITIAL_STATE)",
+      "  ",
+      "  // onClick={() => dispatch({type: ACTION_A})}"
+    ]
+  },
+
 
   "Debugger": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -175,6 +199,23 @@
     ]
   },
 
+  "className": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "cl",
+    "description": "className",
+    "body": [
+      "className={cn('$0')}"
+    ]
+  },
+
+  "cn": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "cn",
+    "description": "className",
+    "body": [
+      "import cn from 'classnames'"
+    ]
+  },
 
   "Jasmine test": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",

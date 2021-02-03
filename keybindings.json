@@ -4,5 +4,10 @@
     "key": "ctrl+x a",
     "command": "wwm.aligncode",
     "when": "editorTextFocus && !editorReadonly"
+  },
+
+  {
+    "key": "f13",
+    "command": "workbench.action.quickOpen",
   }
 ]
