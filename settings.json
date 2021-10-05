@@ -1,8 +1,7 @@
 {
     // General
     "editor.minimap.enabled": false, // hide minimap (bird's-eye views on right)
-    "workbench.activityBar.visible": true, // hide the activity bar (left sidebar)
-    "breadcrumbs.enabled": true, // breadcrumbs (near each tab - shows heirarchy in files, var/functions etc)
+    "workbench.activityBar.visible": true, // breadcrumbs (near each tab - shows heirarchy in files, var/functions etc)
     "editor.detectIndentation": false,
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
@@ -16,6 +15,22 @@
     "diffEditor.renderSideBySide": true,
     "terminal.integrated.inheritEnv": false,
 
+    // Default launch configurations
+    "launch": {
+      "version": "0.2.0",
+      "configurations": [
+        {
+          "name": "Python: Current File (settings.json default)",
+          "type": "python",
+          "request": "launch",
+          "program": "${file}",
+          "console": "integratedTerminal",
+          "justMyCode": false, // allow to set breakpoints in libraries
+          "cwd": "${fileDirname}", // set current working directory (for reading/writing files)
+        }
+      ]  
+    },
+  
     // Javascript: single quotes, and .js extension (i.e. from './bla/Bla.js')
     "typescript.preferences.quoteStyle": "single",
     "javascript.preferences.quoteStyle": "single",
@@ -37,7 +52,29 @@
     "go.useLanguageServer": true,
 
     // Python
-    "python.defaultInterpreterPath": "/opt/miniconda3/bin/python",
-    "python.pythonPath": "/opt/miniconda3/bin/python",
-    "python.terminal.launchArgs": ["-c", "\"import subprocess; subprocess.call(['ipython', '--no-autoindent'])\""]
+    "[python]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4,
+    },
+    //"python.terminal.executeInFileDir": true, // whether to run a file in the file's directory instead of the current folder.
+    //"python.defaultInterpreterPath": "/opt/miniconda3/bin/python",
+    //"python.pythonPath": "/opt/miniconda3/bin/python",
+    // "python.terminal.launchArgs": [
+    //   "-c",
+    //   "\"import subprocess; subprocess.call(['ipython', '--no-autoindent'])\"" // use ipython
+    // ],
+    "python.linting.pylintArgs": [
+      "--generated-members", "torch.*",
+      "--disable=C0111", // disable missing docstring
+      "--disable=C0103"  // disable variable name warning
+    ],
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false,
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
   }

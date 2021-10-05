@@ -9,5 +9,11 @@
   {
     "key": "f13",
     "command": "workbench.action.quickOpen",
-  }
+  },
+
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
 ]

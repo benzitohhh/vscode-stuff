@@ -13,6 +13,24 @@
   // 	"description": "Log output to console"
   // }
 
+  "Def function": {
+    "prefix": "def",
+    "body": [
+      "def ${1:name}(${2:args}):",
+      "  $0"
+    ],
+    "description": "Add a breakpoint in the sourcecode"
+  },
+
+  "Debug - add breakpoint": {
+    "prefix": "d",
+    "body": [
+      "import pdb; pdb.set_trace()",
+      "$1"
+    ],
+    "description": "Add a breakpoint in the sourcecode"
+  },
+
   "Interactive cell adornment": {
     "prefix": "c",
     "body": [
@@ -38,16 +56,93 @@
     "body": [
       "# %%",
       "import matplotlib.pyplot as plt",
+      "## For inline... you need the below:",
       "%matplotlib inline",
       "import seaborn as sns",
       "xs = range(4)",
       "ys = [123, 210, 240, 258]",
       "sns.lineplot(x=xs, y=ys)",
+      "## For non-inline... you need to explicitly call plt.show:",
+      "plt.show()",
       "$1"
     ],
     "description": "adds an interactive cell that emsures external code files are reloaded on each change"
   },
 
+  "readlines simple": {
+    "prefix": "readlines simple",
+    "body": [
+      "with open('${1:filename}') as fp:",
+      "    lines = fp.read().splitlines()",
+      "$0"
+    ],
+    "description": "read lines from a file - simple!"
+  },
+
+  "Pandas read csv": {
+    "prefix": "pandas read csv",
+    "body": [
+      "# use header=None not to read a header, then can can pass names=[...] to set the column names",
+      "df = pd.read_csv('${1:path/to/file}', delimiter=',', skipinitialspace=True, index_col=False)",
+      "$0"
+    ],
+    "description": "read lines from a file - simple!"
+  },
+
+
+
+  "mysql query": {
+    "prefix": "MySQL query",
+    "body": [
+      "## pip install mysql-connector-python",
+      "from mysql.connector import connect",
+      "",
+      "# Import config file, or just inline here:",
+      "# from config import HOST, PORT, USER, PASS, DB",
+      "HOST = 'marvin-db.prod.aistemos.com'",
+      "#HOST = 'zaphod-db.prod.aistemos.com'",
+      "PORT = '3306'",
+      "USER = 'dataupdate'",
+      "PASS = 'rFhzAujUjHyRk8fG'",
+      "DB   = 'PatentFamilies'",
+      "",
+      "LIMIT = 10",
+      "",
+      "LIMIT_CLAUSE = f'LIMIT {LIMIT}' if LIMIT else ''",
+      "",
+      "QUERY = f'''",
+      "SELECT pat_fam_id, status, title, abstract, claims from PatentFamily",
+      "{LIMIT_CLAUSE}",
+      "'''",
+      "",
+      "conn = connect(",
+      "  host=HOST,",
+      "  user=USER,",
+      "  password=PASS,",
+      "  db=DB",
+      ")",
+      "cursor = conn.cursor()",
+      "",
+      "cursor.execute(QUERY)",
+      "results = cursor.fetchall()",
+      "for result in results:",
+      "    print(result)",
+      "",
+      "# alterntively can import into a dataframe",
+      "import pandas as pd",
+      "df = pd.read_sql(QUERY, conn)",
+      "pd.set_option('display.expand_frame_repr', False)",
+      "",
+      "$0"
+    ],
+    "description": "Creates a MySQL connection, and executes a query"
+  },
+
+
+
+  
+  // TkInter stuff (maybe delete?) /////////////////////////////////////////////
+  
   "Tkinter App": {
     "prefix": "app",
     "body": [
