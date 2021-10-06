@@ -8,6 +8,7 @@
 On OSX, it lives somewhere like `~/Library/Application\ Support/Code/User/settings.json`
 
 
+
 ## Snippets
 
 The `snippets` folder can contain snippets for various lanaguages.
