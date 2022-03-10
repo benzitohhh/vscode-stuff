@@ -10,7 +10,6 @@
     "files.associations": {
       ".env*": "properties"
     },
-    "window.zoomLevel": 0,
     "editor.renderWhitespace": "none",
     "diffEditor.renderSideBySide": true,
     "terminal.integrated.inheritEnv": false,

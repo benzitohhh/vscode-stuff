@@ -138,8 +138,16 @@
     "description": "Creates a MySQL connection, and executes a query"
   },
 
-
-
+  "clean patfam id": {
+    "prefix": "clean patfam id",
+    "body": [
+      "def clean_patfam_id(patfam_id):",
+      "  if type(patfam_id) == str and patfam_id[0].lower() == 'c':",
+      "      return int(patfam_id[1:])",
+      "  return int(patfam_id)",
+    ],
+    "description": "convert cipher family id to db family id"
+  },
   
   // TkInter stuff (maybe delete?) /////////////////////////////////////////////
   
