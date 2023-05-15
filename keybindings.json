@@ -15,5 +15,5 @@
     "key": "ctrl+=",
     "command": "editor.action.smartSelect.expand",
     "when": "editorTextFocus"
-  },
+  }
 ]
