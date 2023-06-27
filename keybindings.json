@@ -2,7 +2,7 @@
 [
   { 
     "key": "ctrl+x a",
-    "command": "wwm.aligncode",
+    "command": "vscode-better-align.align", // from Better Align extension
     "when": "editorTextFocus && !editorReadonly"
   },
 

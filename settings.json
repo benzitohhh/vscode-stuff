@@ -54,6 +54,7 @@
     "[python]": {
       "editor.insertSpaces": true,
       "editor.tabSize": 4,
+      "editor.formatOnType": true,
     },
     //"python.terminal.executeInFileDir": true, // whether to run a file in the file's directory instead of the current folder.
     //"python.defaultInterpreterPath": "/opt/miniconda3/bin/python",
@@ -75,5 +76,12 @@
     "notebook.cellToolbarLocation": {
       "default": "right",
       "jupyter-notebook": "left"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
     },
   }
