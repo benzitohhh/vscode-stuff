@@ -77,6 +77,8 @@
       "default": "right",
       "jupyter-notebook": "left"
     },
+    "terminal.integrated.scrollback": 2000,
+    "notebook.output.textLineLimit": 50,
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
       "*": true,
