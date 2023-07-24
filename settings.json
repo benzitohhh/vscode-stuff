@@ -25,7 +25,7 @@
           "program": "${file}",
           "console": "integratedTerminal",
           "justMyCode": false, // allow to set breakpoints in libraries
-          "cwd": "${fileDirname}", // set current working directory (for reading/writing files)
+          //"cwd": "${fileDirname}", // set current working directory (for reading/writing files)
         }
       ]  
     },
