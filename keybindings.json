@@ -7,13 +7,9 @@
   },
 
   {
-    "key": "f15",
-    "command": "vscode.newWindow",
-  },
-
-  {
-    "key": "f14",
-    "command": "workbench.action.quickOpenRecent",
+    "key": "ctrl+=",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
   },
 
   {
@@ -22,8 +18,13 @@
   },
 
   {
-    "key": "ctrl+=",
-    "command": "editor.action.smartSelect.expand",
-    "when": "editorTextFocus"
-  }
+    "key": "f14",
+    "command": "vscode.newWindow",
+  },
+
+  {
+    "key": "f15",
+    "command": "workbench.action.quickOpenRecent",
+  },
+
 ]

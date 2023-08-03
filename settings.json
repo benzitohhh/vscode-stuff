@@ -85,7 +85,8 @@
       "plaintext": false,
       "markdown": false,
       "scminput": false,
-      "javascript": true
+      "javascript": true,
+      "python": true
     },
     "workbench.startupEditor": "none",
   }
