@@ -166,7 +166,7 @@
     "prefix": "D",
     "description": "Debugger statement",
     "body": [
-      "debugger // eslint-disable-line no-debugger $0"
+      "debugger $0"
     ]
   },
 

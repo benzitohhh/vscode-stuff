@@ -1,7 +1,6 @@
 {
     // General
-    "editor.minimap.enabled": false, // hide minimap (bird's-eye views on right)
-    "workbench.activityBar.visible": true, // breadcrumbs (near each tab - shows heirarchy in files, var/functions etc)
+    "editor.minimap.enabled": false, // breadcrumbs (near each tab - shows heirarchy in files, var/functions etc)
     "editor.detectIndentation": false,
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
