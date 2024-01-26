@@ -217,12 +217,12 @@
     ]
   },
 
-  "import css module": {
+  "import scss module": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "css",
     "description": "className",
     "body": [
-      "import s from './${1:filename}.module.css'"
+      "import s from './${1:filename}.module.scss'"
     ]
   },
 
